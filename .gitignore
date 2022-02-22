@@ -33,3 +33,15 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# misc
+*.DS_Store
+
+#storybook
+storybook-static
+
+#IDE config files
+.idea/workspace.xml
+
+#VSCode
+!.vscode/settings.json
