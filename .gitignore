@@ -41,7 +41,10 @@ yarn-error.log*
 storybook-static
 
 #IDE config files
-.idea/workspace.xml
+.idea/
 
 #VSCode
 !.vscode/settings.json
+
+# TypeScript incremental compilation cache
+*.tsbuildinfo
