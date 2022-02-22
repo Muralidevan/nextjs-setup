@@ -8,7 +8,8 @@
     "next/core-web-vitals",
     "plugin:storybook/recommended",
     "plugin:react/recommended",
-    "google",
+    "eslint:recommended",
+    "airbnb",
     "prettier"
   ],
   "parser": "@typescript-eslint/parser",
@@ -32,11 +33,31 @@
     ], //should add ".ts" if typescript project
     "react/prop-types": 0,
     "require-jsdoc": 0,
-    "valid-jsdoc": 0
+    "valid-jsdoc": 0,
+    // If you want to allow imports of devDependencies
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": true
+      }
+    ],
+    //airbnb ESLint config leads the problem -allow import without extension
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ],
+    "react/function-component-definition": 0,
+    "react/jsx-props-no-spreading": "off"
   },
   "settings": {
     "react": {
-      "version": "latest"
+      "version": "detect"
     }
   }
 }

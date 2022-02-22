@@ -1,8 +1,5 @@
-/**
- * AppDocument: The main the web app
- * @return {JSX.Element} The JSX Code for the Home Page
- */
 import Document, { Head, Html, Main, NextScript } from "next/document";
+
 class AppDocument extends Document {
   render() {
     return (
@@ -16,8 +13,8 @@ class AppDocument extends Document {
           />
         </Head>
         <body>
-          <Main></Main>
-          <NextScript></NextScript>
+          <Main />
+          <NextScript />
         </body>
       </Html>
     );
